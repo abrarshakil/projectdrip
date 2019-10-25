@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Project Drip | Overview</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">PROJECT DRIP</a>
+          </div>
+          <div class="nav-wrapper">
+            <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="overview.html">Overview</a></li>
+                      <li><a href="stock.html">Stock</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 5000;
+
+      // Image list
+      images[0] = 'img/showcase_IMG1.jpg';
+      images[1] = 'img/showcase_IMG2.jpg';
+      images[2] = 'img/showcase_IMG3.jpg'
+
+      function changeImg(){
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload = changeImg;
+    </script>
+
+    <!-- <div class="container_overview">
+      <img name="slide" width="900" height="370">
+    </div> -->
+
+    <div class="container">
+      <h1>Globally it was found that 844 million people don't have clean water. </h1>
+      <p>As avid collectors of sneakers and streetwear, it bothered us when we saw toxic and selfish behaviours in the sneaker community. It is easy to spend money frivolously on ourselves, but what if we could enjoy what we love and support a bigger cause? That's where the idea of a not-for-profit consignment store came in. Instead of simply asking for donations, we wanted a way for people to receive but also give. Our stock is bought at the retail price and sold at the resale market price for profit (you don't pay more than what you would anywhere else). All our profits go towards areas around the globe that require water aid (hence the name: Project "Drip").</p>
+    </div>
+
+
+
+
+
+
+    <footer>
+      <p>Project Drip, Copyright &copy; 2017</p>
+    </footer>
+
+
+  </body>
+</html>
